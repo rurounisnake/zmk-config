@@ -23,12 +23,12 @@
                 };
                 lower_layer {
 // ------------------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |                    |  6  |  7  |  8  |  9  |  0  | BKSP |
+// |  INS |  1  |  2  |  3  |  4  |  5  |                    |  6  |  7  |  8  |  9  |  0  | DEL |
 // | CTRL | BT1 | BT2 | BT3 | BT4 | BTCLR |                  | LFT | DWN |  UP | RGT |     |  F12 |
 // | SHFT | F1  | F2  | F3  | F4  | F5  |  boot  |  |        |  F6 | F7  | F8  | F9  | F10 |  F11 |
 //                    | GUI |     | SPC |                    | ENT |     | ALT |
                         bindings = <
-   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5                           &kp N6   &kp N7   &kp N8 &kp N9    &kp N0  &kp BSPC
+   &kp INS    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5                           &kp N6   &kp N7   &kp N8 &kp N9    &kp N0  &kp DEL
    &kp LCTRL &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR                        &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans  &kp F12
    &kp LSHFT  &kp F1       &kp F2       &kp F3       &kp F4       &kp F5       &bootloader  &none  &kp F6   &kp F7   &kp F8 &kp F9    &kp F10 &kp F11
                                     &kp LGUI     &trans       &kp SPACE                            &kp RET  &trans   &kp LALT
@@ -39,12 +39,12 @@
 
                 raise_layer {
 // ------------------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |                    |  ^  |  &  |  *  |  (  |  )  | BKSP |
+// |  HOME |  !  |  @  |  #  |  $  |  %  |                    |  ^  |  &  |  *  |  (  |  )  | END |
 // | CTRL |     |     | INS |HOME |     |                    |  -  |  =  |  [  |  ]  |  \  |  `   |
 // | SHFT |     |     | DEL | END |     |        |  |  boot  |  _  |  +  |  {  |  }  | "|" |  ~   |
 //                    | GUI |     | SPC |                    | ENT |     | ALT |
                         bindings = <
-   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT                    &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
+   &kp  HOME  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT                    &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp END
    &kp LCTRL &trans   &trans &kp INS   &kp HOME   &trans                       &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
    &kp LSHFT &trans   &trans &kp DEL   &kp END    &trans    &none  &bootloader &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
                              &kp LGUI &trans   &kp SPACE                    &kp RET   &trans    &kp LALT
